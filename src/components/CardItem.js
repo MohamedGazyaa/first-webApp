@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import './Cards.css'
 
 function CardItem(props) {
+  console.log(props.src)
   return (
     <>
       <li className="cards__item">
@@ -10,7 +11,7 @@ function CardItem(props) {
               <figure className="cards__item__pic-wrap" data-category={props.label}>
                   <img src={props.src} alt="Travel" className="cards__item__img" />
               </figure>
-              <div className="cards__item__inf">
+              <div className="cards__item__info">
                   <h5 className="cards__item__text">
                     {props.text}
                   </h5>
